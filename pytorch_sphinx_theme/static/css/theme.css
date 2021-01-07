@@ -9734,13 +9734,15 @@ pre {
   float: left;
   z-index: 10;
 }
+/* HF: Hack to get the MPSD logo in the right size.
+Should be improved. */
 @media screen and (min-width: 1100px) {
   .header-logo {
-    background-size: 108px 27px;
+    background-size: 73px 73px; /* background-size: 108px 27px;  */
     position: absolute;
-    height: 27px;
-    width: 108px;
-    top: 4px;
+    height: 73px;        /* height: 27px; */
+    width: 73px;
+    top: -20px;      /* top: 4px; */
     float: none;
   }
 }
@@ -10315,7 +10317,9 @@ ul.pytorch-breadcrumbs a {
 }
 
 .tutorials-header .header-logo {
-  background-image: url("../images/logo-dark.svg");
+    background-image: url("../images/mpsd-cs-logo.svg"); 
+    /* background-image: url("../images/logo-dark.svg");*/
+
 }
 .tutorials-header .main-menu ul li a {
   color: #262626;
